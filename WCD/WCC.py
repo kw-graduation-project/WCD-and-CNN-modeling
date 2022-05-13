@@ -18,9 +18,10 @@ def wc2(brand, name, count):
 
     max_cnt = count
     keyword = brand + '_' + name
+    keyword2 = brand + ' ' + name
     createFolder('./'+ "향수/" + keyword)
 
-    url = f'https://www.google.co.kr/search?q={keyword}' #구글 검색
+    url = f'https://www.google.co.kr/search?q={keyword2}' #구글 검색
 
     browser = webdriver.Chrome()
     browser.maximize_window()
